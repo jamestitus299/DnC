@@ -1,0 +1,17 @@
+{
+    "name": "DnC",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "capAdd": [
+      "SYS_ADMIN"
+    ],
+    "mounts": [
+      "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    ],
+    "forwardPorts": [8080],
+    "settings": {},
+    "extensions": ["ms-azuretools.vscode-docker"],
+    "postCreateCommand": "sudo dockerd &"
+  }
+  
