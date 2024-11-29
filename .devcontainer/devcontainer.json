@@ -13,5 +13,5 @@
     "settings": {},
     "extensions": ["ms-azuretools.vscode-docker"],
     "postCreateCommand": "sudo dockerd &"
-  }
+}
   
